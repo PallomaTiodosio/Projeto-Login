@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Projeto Login\\Repository\\ClienteRepository.cs",
               "ToolTip": "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login\\Repository\\ClienteRepository.cs",
               "RelativeToolTip": "Projeto Login\\Repository\\ClienteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAewJUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T11:39:49.097Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "Projeto Login\\Repository\\Contract\\IClienteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:28:02.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:28:02.345Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Projeto Login\\Models\\Constants\\SituacaoConstant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:15:27.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:15:27.257Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "Projeto Login\\Models\\Constants\\ColaboradorTipoConstant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:14:42.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:14:42.418Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "Projeto Login\\Models\\Colaborador.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T13:20:39.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T13:20:39.856Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "Projeto Login\\Models\\Cliente.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA9wB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T12:19:25.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T12:19:25.298Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "Projeto Login\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-08T12:12:53.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T12:12:53.807Z"
             }
           ]
         }
