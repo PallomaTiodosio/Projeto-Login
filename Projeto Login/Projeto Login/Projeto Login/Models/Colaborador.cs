@@ -6,7 +6,7 @@ namespace Projeto_Login.Models
     {
 
         [Display(Name = "Código", Description = "Código.")]
-        public int ID { get; set; }
+        public int id { get; set; }
 
         [Display(Name = "Nome Completo", Description = "Nome e Sobrenome.")]
         [Required(ErrorMessage = "O nome completo é obrigatório.")]
@@ -27,5 +27,6 @@ namespace Projeto_Login.Models
         [Display(Name = "Tipo")]
         [Required(ErrorMessage = "O Tipo é obrigatório")]
         public string Tipo { get; set; }
+
     }
 }

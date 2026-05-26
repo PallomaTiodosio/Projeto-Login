@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6TETOt+dnnk=",
+  "dgSpecHash": "+SFv9G6Yq0s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
+  "projectFilePath": "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\3mtec\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\3mtec\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
