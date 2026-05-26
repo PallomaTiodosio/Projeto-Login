@@ -16,10 +16,8 @@ Situacao char(1) not null
 );
 
 create table Colaborador(
-ID int auto_increment primary key,
+Id int auto_increment primary key,
 Nome Varchar(50) not null,
-CPF Varchar(11) not null,
-Telefone Varchar(11) not null,
 Email Varchar(50) not null,
 Senha Varchar(8) not null,
 Tipo Varchar(8) not null
