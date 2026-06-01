@@ -10,6 +10,7 @@ builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<Projeto_Login.Libraries.Sessao.Sessao>();
 
+builder.Services.AddHttpContextAccessor();
 // Corrigir problema com TEMPDATA
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
