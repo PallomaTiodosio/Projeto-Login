@@ -43,6 +43,13 @@ app.UseCookiePolicy();
 app.UseSession();
 
 app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{Controller=Home}/{action=Index}/{id?}");
+
+
+
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

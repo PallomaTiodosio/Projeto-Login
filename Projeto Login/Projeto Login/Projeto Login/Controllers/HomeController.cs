@@ -72,7 +72,7 @@ namespace Projeto_Login.Controllers
         public IActionResult LogoutCliente()
         {
             _loginCliente.Logout();
-            return RedirectToAction(nameoof(Index));
+            return RedirectToAction(nameof(Index));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
