@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj": {}
+    "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto-Login\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj": {
+    "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto-Login\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
+        "projectUniqueName": "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto-Login\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
         "projectName": "Projeto Login",
-        "projectPath": "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
+        "projectPath": "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto-Login\\Projeto Login\\Projeto Login\\Projeto Login\\Projeto Login.csproj",
         "packagesPath": "C:\\Users\\3mtec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\3mtec\\Desktop\\ProjetoLogin\\Projeto Login\\Projeto Login\\Projeto Login\\obj\\",
+        "outputPath": "C:\\Users\\3mtec\\Desktop\\Projeto Login\\Projeto-Login\\Projeto Login\\Projeto Login\\Projeto Login\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

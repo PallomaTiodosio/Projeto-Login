@@ -32,6 +32,22 @@ namespace Projeto_Login.Areas.Colaborador.Controllers
 
         public IActionResult PainelComum()
         {
+            ViewBag.Nome = _loginColaborador.GetColaborador().Nome;
+            ViewBag.Tipo = _loginColaborador.GetColaborador().Tipo;
+            ViewBag.Email = _loginColaborador.GetColaborador().Email;
+
+            return View();
+        }
+
+        public IActionResult Painel()
+        {
+            
+
+            return View();
+        }
+        public IActionResult Logout()
+        {
+            _loginColaborador.Logout();
             return View();
         }
 
