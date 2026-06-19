@@ -48,17 +48,7 @@ namespace Projeto_Login.Controllers
             //return new ContentResult() { Content = "Este é o Painel do Cliente!"
             return View();
         }
-        
-
-
-
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+               
         public IActionResult Index()
         {
             return View();

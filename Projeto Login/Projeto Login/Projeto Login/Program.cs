@@ -9,6 +9,8 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<Projeto_Login.Libraries.Sessao.Sessao>();
+builder.Services.AddScoped<Projeto_Login.Libraries.Login.LoginCliente>();
+builder.Services.AddScoped<Projeto_Login.Libraries.Login.LoginColaborador>();
 
 builder.Services.AddHttpContextAccessor();
 // Corrigir problema com TEMPDATA
