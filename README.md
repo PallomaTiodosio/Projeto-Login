@@ -29,5 +29,3 @@ Tipo varchar(8) not null
 
 select * from Cliente;
 select * from Colaborador;
-insert into Cliente values(1, "Benson", "2008-10-09", "M", "11111111111", "55115555555555","bensonShow@gmail.com","mylaptop", "mylaptop", "A");
-insert into Colaborador  values(1, "Ana Maria", "bolinhos@gmail.com", "33333333333", "15151515151515", "bolinho", "C");
