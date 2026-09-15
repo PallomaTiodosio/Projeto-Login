@@ -31,7 +31,7 @@ body {
 }
 
 .back-legal{
-    background-color:dimgray;
+    background-color:dodgerblue;
 }
 .cor-legal{
     color: dimgray;
@@ -44,7 +44,7 @@ body {
     font-size: 16px;
 }
 .link-selector:hover{
-    color: deepskyblue;
+    color: papayawhip;
 }
 .img-logo{
     width: 110px;
