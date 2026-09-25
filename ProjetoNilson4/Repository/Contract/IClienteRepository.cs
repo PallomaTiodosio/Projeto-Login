@@ -14,6 +14,8 @@ namespace ProjetoNilson4.Repository.Contract
 
         //CRUD
         void Cadastrar(Cliente cliente);
+        void Ativar(int Id);
+        void Desativar(int Id);
         void Atualizar(Cliente cliente);
         void Excluir(int Id);
         Cliente ObterCliente(int Id);

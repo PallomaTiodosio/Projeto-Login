@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoNilson4.Libraries.Filtro;
 using ProjetoNilson4.Models;
 using ProjetoNilson4.Repository.Contract;
 
@@ -23,7 +24,7 @@ namespace ProjetoNilson4.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(cliente.Senha == cliente.ConfirmacaoSenha)
+                if (cliente.Senha == cliente.ConfirmacaoSenha)
                 {
                     _clienteRepository.Cadastrar(cliente);
                     return RedirectToAction("LoginCliente", "Home");
@@ -37,6 +38,21 @@ namespace ProjetoNilson4.Controllers
             {
                 return View(cliente);
             }
+        }
+
+        [ValidateHttpReferer]
+        public IActionResult Ativar(int Id)
+        {
+            _clienteRepository.Ativar(Id);
+            return RedirectToAction(nameof(Index));
+        }
+
+        [ValidateHttpReferer]
+        public IActionResult Desativar(int Id)
+        {
+            _clienteRepository.Desativar(Id);
+            return RedirectToAction(nameof(Index));
+
         }
     }
 }

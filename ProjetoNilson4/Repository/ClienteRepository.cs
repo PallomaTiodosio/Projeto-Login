@@ -18,7 +18,7 @@ namespace ProjetoNilson4.Repository
         }
         public Cliente Login(string Email, string Senha)
         {
-            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("select * from cliente where Email = @Email and Senha = @Senha", conexao);
@@ -32,7 +32,7 @@ namespace ProjetoNilson4.Repository
                 Cliente cliente = new Cliente();
                 dr = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
 
-                while(dr.Read())
+                while (dr.Read())
                 {
                     cliente.Id = Convert.ToInt32(dr["Id"]);
                     cliente.Nome = Convert.ToString(dr["Nome"]);
@@ -53,7 +53,7 @@ namespace ProjetoNilson4.Repository
         public void Atualizar(Cliente cliente)
         {
             string Situacao = SituacaoConstant.Ativo;
-            using( var conexao = new MySqlConnection(_conexaoMySQL))
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("update Cliente set Nome=@Nome, Nascimento=@Nascimento, Sexo=@Sexo, CPF=@CPF," + " Telefone=@Telefone, Email=@Email, Senha=@Senha, Situacao=@Situacao where Id=@Id", conexao);
@@ -99,7 +99,7 @@ namespace ProjetoNilson4.Repository
 
         public void Excluir(int Id)
         {
-            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("delete from Cliente where Id=@Id", conexao);
@@ -109,11 +109,11 @@ namespace ProjetoNilson4.Repository
             }
         }
 
-        
+
 
         public Cliente ObterCliente(int Id)
-        {           
-            using(var conexao = new MySqlConnection(_conexaoMySQL))
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand(" select * from Cliente where Id=@Id", conexao);
@@ -138,7 +138,7 @@ namespace ProjetoNilson4.Repository
                 }
                 return cliente;
             }
-            
+
         }
 
         public IEnumerable<Cliente> ObterTodosClientes()
@@ -156,7 +156,7 @@ namespace ProjetoNilson4.Repository
 
                 conexao.Close();
 
-                foreach(DataRow dr in dt.Rows)
+                foreach (DataRow dr in dt.Rows)
                 {
                     cliList.Add(
                         new Cliente
@@ -183,6 +183,35 @@ namespace ProjetoNilson4.Repository
             throw new NotImplementedException();
         }
 
+        public void Ativar(int Id)
+        {
+            string Situacao = SituacaoConstant.Ativo;
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao WHERE Id=@Id", conexao);
 
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+
+            }
+        }
+
+        public void Desativar(int Id)
+        {
+            string Situacao = SituacaoConstant.Desativado;
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao WHERE Id=@Id", conexao);
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+        }
     }
 }

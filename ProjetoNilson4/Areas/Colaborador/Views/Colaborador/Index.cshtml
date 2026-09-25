@@ -1,0 +1,114 @@
+@model IEnumerable<ProjetoNilson4.Models.Colaborador>
+
+@{
+    ViewData["Title"] = "Colaborador";
+}
+
+<h1>Colaboradores</h1>
+
+<a class="= btn btn-primary" asp-action="Cadastrar">Cadastrar</a>
+
+
+<div class="table-responsive">
+     <table class="= table table-bordered"></table>
+     <thead>
+         <tr>
+
+             <th scope="col">Html.DisplayNameFor(model => model.first().id</th>
+            <th scope="col">Html.DisplayNameFor(model => model.first().Nome</th>
+            <th scope="col">Html.DisplayNameFor(model => model.first().Email</th>
+            <th scope="col">Html.DisplayNameFor(model => model.first().Senha</th>
+            <th scope="col">Ações</th>
+         </tr>
+
+     </thead>
+
+     <tbody>
+        @foreach (Colaborador colaborador in Model)
+        {
+            <tr>
+                <th scope="row">@colaborador.Id</th>
+                <td>@colaborador.Nome</td
+                <td>@colaborador.Email</td>
+                <td>@colaborador.Senha</td> 
+            </tr>
+            <td>
+                <a asp-action="Atualizar" asp-route-id="@colaborador.Id" class="btn btn-secondary">Atualizar</a>
+                <a asp-action="Desativar" asp-route-id="@colaborador.Id" class="btn btn-danger">Desativar</a>
+            </td>
+        }
+    </tbody>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Senha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Senha)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Tipo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

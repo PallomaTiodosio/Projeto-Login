@@ -14,7 +14,7 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            return View(_colaboradorRepository.ObterTodosColaboradores());
         }
         [HttpGet]
         public IActionResult Cadastro()
